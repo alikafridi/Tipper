@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tipper</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="bill_amount_view">Bill Amount ($):</string>
+    <string name="bill_amount_edit">0.0</string>
+    
+    <string name="tip_percent_view">Tip (%):</string>
+    <string name="tip_percent_edit">15.0</string>
+    
+    <string name="tip_amount_view">Tip Amount ($):</string>
+    <string name="tip_amount_edit">0.0</string>
+    
+    <string name="final_amount_view">Total Bill ($):</string>
+    <string name="final_amount_edit">0.0</string>
+
+</resources>

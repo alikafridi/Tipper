@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipCalculator" >
+
+    <TextView
+        android:id="@+id/billAmountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/bill_amount_view" />
+
+    <EditText
+        android:id="@+id/billAmountEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/billAmountView"
+        android:layout_alignBottom="@+id/billAmountView"
+        android:layout_alignLeft="@+id/tipPercentEdit"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:text="@string/bill_amount_edit" />
+
+    <TextView
+        android:id="@+id/tipPercentView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/billAmountView"
+        android:layout_below="@+id/billAmountEdit"
+        android:layout_marginTop="23dp"
+        android:text="@string/tip_percent_view" />
+
+    <EditText
+        android:id="@+id/tipPercentEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tipPercentView"
+        android:layout_alignBottom="@+id/tipPercentView"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/tipPercentView"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:text="@string/tip_percent_edit" />
+
+    <EditText
+        android:id="@+id/tipAmountEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tipAmountView"
+        android:layout_alignBottom="@+id/tipAmountView"
+        android:layout_alignLeft="@+id/tipPercentEdit"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:text="@string/tip_amount_edit" />
+
+    <EditText
+        android:id="@+id/finalAmountEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/finalAmountView"
+        android:layout_alignBottom="@+id/finalAmountView"
+        android:layout_alignLeft="@+id/tipPercentEdit"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:text="@string/final_amount_edit" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/finalAmountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tipAmountEdit"
+        android:layout_marginTop="33dp"
+        android:layout_toLeftOf="@+id/tipPercentEdit"
+        android:text="@string/final_amount_view" />
+
+    <TextView
+        android:id="@+id/tipAmountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tipPercentEdit"
+        android:layout_marginTop="28dp"
+        android:layout_toLeftOf="@+id/tipPercentEdit"
+        android:text="@string/tip_amount_view" />
+
+</RelativeLayout>
