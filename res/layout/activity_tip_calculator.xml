@@ -75,18 +75,43 @@
         android:id="@+id/finalAmountView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tipAmountEdit"
-        android:layout_marginTop="33dp"
-        android:layout_toLeftOf="@+id/tipPercentEdit"
+        android:layout_alignRight="@+id/tipAmountView"
+        android:layout_centerVertical="true"
         android:text="@string/final_amount_view" />
 
     <TextView
         android:id="@+id/tipAmountView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tipPercentEdit"
-        android:layout_marginTop="28dp"
-        android:layout_toLeftOf="@+id/tipPercentEdit"
+        android:layout_above="@+id/finalAmountEdit"
+        android:layout_alignLeft="@+id/billAmountView"
+        android:layout_marginBottom="24dp"
         android:text="@string/tip_amount_view" />
+
+    <SeekBar
+        android:id="@+id/tipSeekChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tipAmountEdit"
+        android:layout_alignLeft="@+id/tipPercentView"
+        android:layout_alignRight="@+id/tipAmountEdit"
+        android:progress="15" />
+
+    <TextView
+        android:id="@+id/instruct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/finalAmountView"
+        android:layout_below="@+id/finalAmountEdit"
+        android:layout_marginTop="71dp"
+        android:text="@string/instruct" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instruct"
+        android:layout_centerHorizontal="true"
+        android:text="@string/instructions" />
 
 </RelativeLayout>

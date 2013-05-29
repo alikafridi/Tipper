@@ -15,5 +15,8 @@
     
     <string name="final_amount_view">Total Bill ($):</string>
     <string name="final_amount_edit">0.0</string>
+    
+    <string name="instruct">Instructions:</string>
+    <string name="instructions">Enter the amount of your bill\nChange the tip using the slider</string>
 
 </resources>

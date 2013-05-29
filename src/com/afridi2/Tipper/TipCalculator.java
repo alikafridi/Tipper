@@ -6,6 +6,8 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.widget.EditText;
+import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
 
 public class TipCalculator extends Activity {
 
@@ -23,6 +25,8 @@ public class TipCalculator extends Activity {
 	EditText tipPercentET;
 	EditText tipAmountET;
 	EditText finalBillET;
+	
+	SeekBar tipSeekBar;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +50,10 @@ public class TipCalculator extends Activity {
 		tipPercentET = (EditText) findViewById(R.id.tipPercentEdit);
 		tipAmountET = (EditText) findViewById(R.id.tipAmountEdit);
 		finalBillET = (EditText) findViewById(R.id.finalAmountEdit);
+		
+		tipSeekBar = (SeekBar) findViewById(R.id.tipSeekChange);
+		
+		tipSeekBar.setOnSeekBarChangeListener(tipSeekBarListener);
 		
 		billAmountET.addTextChangedListener(billBeforeTipListener);
 		
@@ -97,6 +105,30 @@ public class TipCalculator extends Activity {
 		outState.putDouble(currentFinalBill, finalBill);
 		
 	}
+	
+	private OnSeekBarChangeListener tipSeekBarListener = new OnSeekBarChangeListener() {
+
+		@Override
+		public void onProgressChanged(SeekBar arg0, int arg1, boolean arg2) {
+			// TODO Auto-generated method stub
+			tipPercent = tipSeekBar.getProgress();
+			tipPercentET.setText(""+tipPercent);
+			update();
+		}
+
+		@Override
+		public void onStartTrackingTouch(SeekBar arg0) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void onStopTrackingTouch(SeekBar arg0) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+	};
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
