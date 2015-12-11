@@ -8,3 +8,5 @@ It has some functionalities that I have added from the code shown in the tutoria
 The icon for the image was designed by Nishan Sothilingam and was found on iconfinder.com, where it is published under a free for commercial use license.
 
 I also used PlaceIt by Breezi to produce the image of the screenshot on an android app. 
+
+![Tipper Screenshot](/Tipper_ScreenShot.png?raw=true "Tipper Screenshot")
